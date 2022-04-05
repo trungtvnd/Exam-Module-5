@@ -1,0 +1,28 @@
+<h1 mat-dialog-title style="color: blue">Detail</h1>
+
+<div mat-dialog-content id="detailBook">
+  <form [formGroup]="bookForm">
+    <mat-form-field appearance="legacy">
+      <mat-label>Title</mat-label>
+      <input matInput placeholder="Placeholder" formControlName="title" readonly="readonly">
+      <mat-icon matSuffix>book</mat-icon>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+    <mat-form-field appearance="legacy">
+      <mat-label>Author</mat-label>
+      <input matInput placeholder="Placeholder" formControlName="author" readonly="readonly">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+    <mat-form-field appearance="legacy">
+      <mat-label>Description</mat-label>
+      <textarea matInput placeholder="Placeholder" formControlName="description" readonly="readonly"></textarea>
+<!--      <input matInput placeholder="Placeholder" formControlName="description" readonly="readonly">-->
+      <mat-icon matSuffix>create</mat-icon>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+    <div mat-dialog-actions [align]="'end'">
+      <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+    </div>
+  </form>
+</div>
